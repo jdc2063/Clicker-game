@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Miner clicker</title>      
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header>
+            <button id="new_game" class="button" onclick="new_game()">New game</button>
+            <section id="title"><h1>Miner Clicket</h1></section> 
+            <achievement>
+                <h2 id="name_ach"></h2>   
+            </achievement>   
+        </header>
+               
+        <section id="game">
+            <section id="point">
+                <section id="gold">
+                    <h1>Gold récoltés</h1>
+                    <h2 id="score">0</h2>
+                </section>
+                <section id="gps">
+                    <h1>GPS</h1>
+                    <h4 id="mission" class="test">0</h4>
+                </section>
+                <show>
+                    <button id="affiche" class="button" onclick="affichall();">Afficher achievement</button>
+                </show>
+            </section>
+            <section id="center">
+                <stage>
+                    <h2>étages explorés</h2>
+                    <h3 id="stage">0</h3>
+                </stage>
+                <button id="add_gold" onclick="addGold(1)">Click</button>                           
+            </section>
+            <section id="shop">
+                <div class="minion">
+                    <h4 id="minion1_name" class="name"></h4>
+                    <h4 id="minion1_cost" class="cost"></h4>
+                    <h4 id="minion1_gps" class="gps"></h4>
+                    <h4 id="minion1_owned" class="owned"></h4>
+                    <button id="minion1_add" class="button" onclick="buyMinion(1);">Acheter mineur 1</button>
+                </div>
+                <div class="minion">
+                    <h4 id="minion2_name" class="name"></h4>
+                    <h4 id="minion2_cost" class="cost"></h4>
+                    <h4 id="minion2_gps" class="gps"></h4>
+                    <h4 id="minion2_owned" class="owned"></h4>
+                    <button id="minion2_add" class="button" onclick="buyMinion(2);">Acheter mineur 2</button>
+                </div>
+                <div class="minion">
+                    <h4 id="minion3_name" class="name"></h4>
+                    <h4 id="minion3_cost" class="cost"></h4>
+                    <h4 id="minion3_gps" class="gps"></h4>
+                    <h4 id="minion3_owned" class="owned"></h4>
+                    <button id="minion3_add" class="button" onclick="buyMinion(3);">Acheter mineur 3</button>
+                </div>
+                <div class="minion">
+                    <h4 id="extra_name" class="name">Extracteur amélioré</h4>
+                    <h4 id="extra_cost" class="cost">0 Gold</h4>
+                    <h4 id="extra_gps" class="gps">X2 pour tous les mineurs</h4>
+                    <div id="extra_owned" class="owned">
+                        <h4 id="status" class="owned">Pret</h4>
+                        <h4 id="timer"></h4>
+                    </div>
+                    
+                    <button id="extra_add" class="button" onclick="buyExtra();">Acheter extracteur</button>
+                </div>
+            </section>
+            
+        </section>
+        <liste></liste>
+        <script src="js/script.js"></script>
+    </body>
+</html>
