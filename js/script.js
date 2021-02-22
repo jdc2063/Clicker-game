@@ -227,6 +227,7 @@ function affichall() {
             if (achievement[i].activate == 1) {
                 var select = document.querySelector("liste");
                 var test = document.createElement("div");
+                test.style.background="#ccc";
                 test.className= "group";
                 select.appendChild(test);
 
